@@ -10,7 +10,7 @@ MESSAGE = os.environ.get("MESSAGE", "Bonjour depuis mon premier PaaS !")
 def home():
     return f"<h1>{MESSAGE}</h1><p>Version 2</p>"
 
-@app.route("/api/health")
+@app.route("/api/health"
 def health():
     return jsonify(status="ok")
 
